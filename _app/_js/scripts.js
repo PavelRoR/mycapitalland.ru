@@ -3,6 +3,16 @@
 //@prepros-prepend jquery.fancybox.min.js
 //@prepros-prepend owl.carousel.min.js
 
+var isIE = false || !!document.documentMode;
+
+if (isIE) {
+    var head = document.getElementsByTagName("head")[0];
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "css/styles-ie.min.css";
+    head.appendChild(link);
+}
+
 $(document).ready(function () {
     $(function () {
         var check = $('.check', this),
@@ -104,11 +114,8 @@ $(document).ready(function () {
         });
     });
     $(".video-wrapper-rev img, .video-wrapper-rev-item img").click(function (e) {
-        var a = $(this).parent().attr("data-youtube");
         var l = $(this).parent().attr('data-img');
-        $('.video-wrapper-frame').parent().html('<img src="' + l + '" alt="Видео отзыв">')
-        $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?mute=1&autoplay=1&rel=0"class="video-wrapper-frame"  allowfullscreen></iframe>');
-
+        $('.video-wrapper-frame').parent().html('<img src="' + l + '" alt="Видео отзыв">');
     });
     /*Конец документа*/
 });
