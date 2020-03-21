@@ -73,7 +73,7 @@ $(document).ready(function () {
             transitionEffect: 'slide'
         });
     });
-    $(".button-modal,.polotics-link").fancybox();
+    $(".button-modal-up,.polotics-link").fancybox();
     /*Отзывы*/
     $(function () {
         $('#certs').owlCarousel({
@@ -82,7 +82,7 @@ $(document).ready(function () {
             items: 4,
             loop: true,
             margin: 20,
-            nav: true,
+            // nav: true,
             navText: ["‹", "›"],
             dots: false,
             autoHeightClass: 'owl-height',
