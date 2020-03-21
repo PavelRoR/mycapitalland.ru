@@ -28,4 +28,4 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
-ErrorDocument 404  https://mastervision.su/404/
+ErrorDocument 404  https://mycapitalland.ru/404/
