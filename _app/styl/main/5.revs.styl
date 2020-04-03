@@ -4,6 +4,8 @@
 	max-width 560px
 .button-revs
 	margin: 50px auto 80px
+.text-rev-item
+	text-align: center
 .text-rev-link
 	display block
 	position relative
@@ -20,6 +22,7 @@
 		background-image url(../img/icons/zoom.png)
 		background-repeat no-repeat
 		background-position: center
+		// background-size: auto 90%
 		top 0
 		left 0
 		right 0
@@ -28,13 +31,15 @@
 		opacity 0
 	&:hover.text-rev-link:after
 		opacity 1
+.text-rev-link-double:after
+	background-size auto 90%
 .text-rev
-	width 100%
+	width auto
 	height auto
 	object-fit: contain
 	object-position: center
 	height 110px
-	display: inline
+	display: inline-block
 	width 100%
 .text-rev-double
 	height 55px

@@ -114,8 +114,8 @@ $(document).ready(function () {
         });
     });
     $(".video-wrapper-rev img, .video-wrapper-rev-item img").click(function (e) {
-        var l = $(this).parent().attr('data-img');
-        $('.video-wrapper-frame').parent().html('<img src="' + l + '" alt="Видео отзыв">');
+        var a = $(this).parent().attr("data-youtube");
+        $(this).parent().html('<iframe src="https://www.youtube.com/embed/' + a + '?showinfo=0&rel=0&autoplay=1&mute=1&modestbranding=1"  allowfullscreen></iframe>')
     });
     /*Конец документа*/
 });
