@@ -1,0 +1,35 @@
+-var head_url = 'https://mycapitalland.ru/confirm/';
+-var head_title = 'Плохая новость! Мы не можем пригласить Вас на мастер-класс';
+-var styles = '../css/confirm.min.css';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+-var logo = "/img/logo2.png";
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#confirm
+			.container
+				include pug/0.header.pug
+				h1.main-title Плохая новость! 
+					span Мы не можем пригласить Вас на мастер-класс
+				p.main-text Чтобы мы могли отправить Вам ссылку на мастер-класс, 
+					span Вам необходимо подтвердить свой e-mail
+				p.main-text Все что Вам нужно сделать - зайти прямо сейчас в почтовый ящик, найти письмо с просьбой подтвердить подписку и кликнуть на большую синюю кнопку 
+					span «ПОДТВЕРДИТЬ ПОДПИСКУ»
+				p.main-text У Вас все получится, держим за Вас кулачки. До встречи на мастер-классе, 
+					br
+					| Ваша команда My Capital
+				p.main-text P.S. Если вдруг не нашли письмо в своем почтовом ящике - загляните в папку СПАМ
+				.mails
+					a(href="https://mail.yandex.ru/" target="_blank").mail.mail-yandex
+					a(href="http://gmail.com/" target="_blank").mail.mail-gmail
+					a(href="http://e.mail.ru/" target="_blank").mail.mail-mailru
+					a(href="https://mail.rambler.ru/" target="_blank").mail.mail-rambler
+		include pug/main/6.footer.pug
+		script(src="../js/confirm.min.js")
+		include pug/scripts/body_bottom_scripts
